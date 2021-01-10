@@ -8,9 +8,9 @@ var tbody = d3.select("tbody");
 // Console.log the ufo sighting data from data.js
 console.log(tableData);
 
-// Step 1: Loop Through `data` and console.log each tableData object
+// Step 1: Loop Through `tableData` and console.log each tableData object
 tableData.forEach(function(sighting) {
-  console.log(sighting;
+  console.log(sighting);
 });
 
 // Step 2:  Use `Object.entries` to console.log each ufo sighting value
@@ -65,13 +65,13 @@ var button = d3.select("#button");
 // Select the form
 var input = d3.select("#form");
 
+
 //Select input element
 var inputElement = d3.select("#example-form-input");
 
-var inputValue = inputElement.property("value");
+var inputValue = inputElement.date("value");
 
 console.log(inputValue);
-
 
 // Create event handlers 
 button.on("click", runEnter);
